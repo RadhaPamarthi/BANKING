@@ -1,9 +1,69 @@
-body {
-    font-family: Arial, sans-serif;
+.login-container {
+    width: 100%;
+    max-width: 360px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 8px;
 }
 
-input, button {
-    margin: 10px;
-    padding: 8px;
-    border: 1px solid #ddd;
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container .country-code {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px 10px 30px; /* Padding adjusted for country code */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-error {
+    border-color: red; /* Highlight the input field in red if there is an error */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+}
+
+.login-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0070ba; /* PayPal blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.login-button:hover {
+    background-color: #005ea6;
+}
+
+.login-options {
+    margin-top: 20px;
+}
+
+.forgot-email-button, .signup-button {
+    background: none;
+    border: none;
+    color: #0070ba;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.forgot-email-button:hover, .signup-button:hover {
+    text-decoration: underline;
 }
